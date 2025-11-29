@@ -107,7 +107,7 @@ Navigate to the `src` directory and run the app.
     
     ```bash
     cd src
-    streamlit run app.py`
+    streamlit run app.py
     ```
     
-    The application will open in your browser at `http://localhost:8501`.
+    The application will open in your browser at `http://localhost:8501.
