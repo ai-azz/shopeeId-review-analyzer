@@ -3,13 +3,7 @@
 > End-to-End NLP Pipeline & Analytics Dashboard: From Raw Scraped Data to LLM-Ready Dataset
 > 
 
-[Python](https://img.shields.io/badge/Python-3.10-blue?style=for-the-badge&logo=python&logoColor=white)
-
-[Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white)
-
-[Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
-
-[Scikit-Learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3.10-blue?style=for-the-badge&logo=python&logoColor=white) ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white) ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white) ![Scikit-Learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
 
 ## 📌 Executive Summary
 
@@ -28,7 +22,8 @@ This project architects a robust data pipeline to scrape, clean, and analyze **2
 
 ## 🖥️ Dashboard Demo
 
-
+> [Live Demo](https://shopeeid-review-analyzer.streamlit.app/)
+>
 
 **Features:**
 
