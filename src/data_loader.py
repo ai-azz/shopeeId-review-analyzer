@@ -1,3 +1,4 @@
+import os
 import pandas as pd
 import streamlit as st
 import joblib
@@ -6,7 +7,14 @@ import plotly.express as px
 # caching data to prevent reloading every time
 @st.cache_data
 def load_data():
-    df = pd.read_csv('../data/processed/shopee_reviews_clean.csv')
+    data_dir = os.path.dirname(os.path.abspath(__file__))
+    file_path = os.path.join(data_dir, '..', 'data', 'processed', 'shopee_reviews_clean.csv')
+    
+    try:
+        df = pd.read_csv(file_path)
+    except FileNotFoundError:
+        st.error(f"File tidak ditemukan di: {file_path}")
+        return pd.DataFrame()
     
     if 'review_date' in df.columns:
         df['review_date'] = pd.to_datetime(df['review_date'])
@@ -25,7 +33,9 @@ def load_data():
 # load model with cache resource
 @st.cache_resource
 def load_model():
-    model = joblib.load('../models/sentiment_pipeline.pkl')
+    model_dir = os.path.dirname(os.path.abspath(__file__))
+    model_path = os.path.join(model_dir, '..', 'models', 'sentiment_pipeline.pkl')
+    model = joblib.load(model_path)
     return model
 
 # helper for plotly
